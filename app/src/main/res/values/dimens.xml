@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleSize">40sp</dimen>
+    <dimen name="titleMarginTop">20dp</dimen>
+    <dimen name="marginTop">50dp</dimen>
+    <dimen name="layoutSize">230dp</dimen>
+    <dimen name="smallMargin">30dp</dimen>
+    <dimen name="marginSmaller">15dp</dimen>
+    <dimen name="imageSize">261dp</dimen>
+    <dimen name="imageMargin">5dp</dimen>
+    <dimen name="TextSize">20sp</dimen>
+    <dimen name="marginTen">10dp</dimen>
+    <dimen name="TextLayout">100dp</dimen>
+    <dimen name="paddingSmall">7dp</dimen>
+    <dimen name="TextViewLayout">80dp</dimen>
+    <dimen name="sliderLayoutWeight">320dp</dimen>
+    <dimen name="ValueTo">190</dimen>
+    <dimen name="ValueFrom">140</dimen>
+    <dimen name="step">1</dimen>
+    <dimen name="sliderWeight">300dp</dimen>
+
+</resources>

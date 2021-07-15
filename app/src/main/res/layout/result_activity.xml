@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/BmiLab"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/marginTop"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/bmi" />
+
+    <TextView
+        android:id="@+id/idealWeightLab"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BmiLab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/idealWeight" />
+
+    <TextView
+        android:id="@+id/weightStatusLab"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idealWeightLab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/weightStatus" />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightStatusLab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/message" />
+
+    <TextView
+        android:id="@+id/messageDetails"
+        style="@style/Text"
+        android:layout_width="@dimen/layoutSize"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:fontFamily="serif"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mainPageButt"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/marginSmaller"
+        android:text="@string/mainPage" />
+
+</RelativeLayout>

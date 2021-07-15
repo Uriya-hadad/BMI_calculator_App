@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        style="@style/ButtonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"/>
+
+    <TextView
+        android:id="@+id/BodyType"
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginTop"
+        android:layout_marginTop="@dimen/marginTop"
+        android:text="@string/bodyType" />
+
+    <RadioGroup
+        android:id="@+id/bodyTypeGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/BodyType"
+        android:layout_marginStart="@dimen/marginTen"
+        android:layout_toEndOf="@id/BodyType"
+        android:background="@drawable/border"
+        android:paddingStart="@dimen/imageMargin"
+        android:paddingEnd="@dimen/paddingSmall">
+
+        <RadioButton
+            android:id="@+id/smallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small"
+            android:textStyle="bold"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/mediumButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/largeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/large"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/WeightView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        style="@style/Text"
+        android:layout_alignEnd="@id/BodyType"
+        android:layout_below="@id/bodyTypeGroup"
+        android:layout_marginTop="@dimen/marginTop"
+        />
+    <EditText
+        android:id="@+id/weightTxt"
+        android:layout_width="@dimen/TextViewLayout"
+        android:layout_height="wrap_content"
+        android:hint="@string/weight_"
+        android:autofillHints="weight"
+        android:layout_toEndOf="@id/WeightView"
+        android:layout_alignBaseline="@id/WeightView"
+        android:layout_marginStart="@dimen/imageMargin"
+        android:inputType="numberDecimal" />
+    <RelativeLayout
+        android:layout_width="@dimen/sliderLayoutWeight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WeightView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:paddingBottom="@dimen/smallMargin"
+        >
+
+    <TextView
+        android:id="@+id/heightLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:layout_centerHorizontal="true"
+        style="@style/Text"
+        android:layout_marginTop="@dimen/marginSmaller"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/heightSlider"
+        android:layout_width="@dimen/sliderWeight"
+        android:layout_height="wrap_content"
+        android:stepSize="@dimen/step"
+        android:value="@dimen/ValueFrom"
+        android:valueFrom="@dimen/ValueFrom"
+        android:valueTo="@dimen/ValueTo"
+        app:thumbColor="@color/black"
+        app:trackColor="@color/teal_700"
+        android:layout_below="@id/heightLab"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

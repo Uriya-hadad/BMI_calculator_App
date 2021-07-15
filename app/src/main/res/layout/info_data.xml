@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        style="@style/ButtonNext"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/FirstName"
+        android:layout_marginStart="@dimen/marginTop"
+        android:layout_marginTop="@dimen/marginTop"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/LastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LastName"
+        android:layout_below="@id/FirstName"
+        android:layout_alignEnd="@id/FirstName"
+        android:layout_marginTop="@dimen/marginTop"
+        style="@style/Text"
+        />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Age"
+        android:layout_below="@id/LastName"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_alignEnd="@id/LastName"
+        style="@style/Text"
+        />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gender"
+        android:layout_marginStart="@dimen/marginTop"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_below="@id/Age"
+        android:layout_alignEnd="@id/Age"
+        style="@style/Text"/>
+
+
+    <EditText
+        android:id="@+id/FirstNameTxt"
+        android:layout_width="@dimen/TextLayout"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/FirstName"
+        android:layout_alignBaseline="@id/FirstName"
+        android:hint="@string/first_name"
+        android:layout_marginStart="@dimen/imageMargin"
+        android:autofillHints="first name"
+        android:inputType="textAutoComplete"/>
+
+    <EditText
+        android:id="@+id/LastNameTxt"
+        android:layout_width="@dimen/TextLayout"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/LastName"
+        android:layout_alignBaseline="@id/LastName"
+        android:hint="@string/Last_name"
+        android:layout_marginStart="@dimen/imageMargin"
+        android:autofillHints="last name"
+        android:inputType="textAutoComplete"/>
+    <EditText
+        android:id="@+id/ageTxt"
+        android:layout_width="@dimen/marginTop"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Age"
+        android:layout_alignBaseline="@id/Age"
+        android:hint="@string/age"
+        android:layout_marginStart="@dimen/imageMargin"
+        android:autofillHints="age"
+        android:inputType="number" />
+    <RadioGroup
+        android:id="@+id/GenderGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Gender"
+        android:layout_toEndOf="@id/Gender"
+        android:layout_marginStart="@dimen/marginTen"
+        android:background="@drawable/border"
+        android:padding="@dimen/imageMargin"
+        >
+        <RadioButton
+            android:id="@+id/maleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Male"
+            android:textStyle="bold"
+            android:checked="true"
+
+            />
+        <RadioButton
+            android:id="@+id/femaleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/Female"/>
+    </RadioGroup>
+
+
+
+</RelativeLayout>

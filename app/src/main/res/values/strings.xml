@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BMI calculator</string>
+    <string name="title"><u>BMI calculator</u></string>
+    <string name="Info">Info Data</string>
+    <string name="MainInfo">Main Information</string>
+    <string name="result">Result</string>
+    <string name="startButton">start!</string>
+    <string name="Next">Next</string>
+    <string name="FirstName">FirstName:</string>
+    <string name="LastName">LastName:</string>
+    <string name="Age">Age:</string>
+    <string name="first_name">first name</string>
+    <string name="Last_name">last name</string>
+    <string name="age">age</string>
+    <string name="Gender">Gender:</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="bodyType">Body-Type:</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="weight">Weight:</string>
+    <string name="height"><u>Height</u></string>
+    <string name="weight_">weight</string>
+    <string name="submit">Submit</string>
+    <string name="bmi">BMI:</string>
+    <string name="idealWeight">Ideal Weight:</string>
+    <string name="weightStatus">Weight Status:</string>
+    <string name="message"><u>message</u></string>
+    <string name="mainPage">main page</string>
+    <string name="emptyMessage">Fill in all the required fields!</string>
+    <string name="BmiLab">BMI: %1$,.2f</string>
+    <string name="idealLab">Ideal Weight: %1$,.2f</string>
+    <string name="statusLab">Weight Status: %1$s </string>
+    <string name="messageDetails"><b>Your actual weight is</b> %1$,.2f
+        and <b>your ideal weight is</b> %2$.2f so
+        i think you know what you need to do…</string>
+    <string name="quit">Quit</string>
+</resources>
